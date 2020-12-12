@@ -1,0 +1,20 @@
+[package]
+name = "yew-component-size"
+version = "0.1.0"
+authors = ["James Birtles <jamesb@airca.st>"]
+edition = "2018"
+description = "A Yew component that emits events when the parent component changes width/height."
+license = "MIT OR Apache-2.0"
+readme = "README.md"
+repository = "https://github.com/AircastDev/yew-component-size"
+keywords = ["yew", "component"]
+categories = ["wasm"]
+
+[features]
+default = []
+
+[dependencies]
+yew = "0.17"
+wasm-bindgen = "0.2"
+web-sys = { version = "0.3", features = ["Element", "DomRect", "HtmlIFrameElement", "Window"] }
+serde = { version = "1.0", optional = true, features = ["derive"] }
